@@ -1,0 +1,35 @@
+@import '/src/app/styles/vars'
+
+.footer
+  background-color: #000000
+  color: #FFFFFF
+  &__container
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 40px 0
+  .footer
+    &__logo
+      align-items: center
+      margin-bottom: 50px
+      &-image
+        height: 65px
+      &-text
+        text-transform: uppercase
+        font-family: $osiris
+        font-size: $h1-font-size
+    &__links
+      margin-bottom: 100px
+      .link
+        font-family: $montserrat
+        font-size: $normal-font-size
+        font-weight: $font-regular
+        margin: 0 35px
+        &:hover
+          color: $white-light
+        &:active
+          color: $white-dark
+    &__copyright
+      font-family: $montserrat
+      font-size: $small-font-size
+      font-weight: $font-light

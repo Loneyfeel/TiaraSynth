@@ -4,6 +4,7 @@ import {BrowserRouter} from 'react-router-dom'
 
 import App from './App.jsx'
 
+import './styles/reset.css'
 import './styles/normalize.css'
 import './styles/index.css'
 

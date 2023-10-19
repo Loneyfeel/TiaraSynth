@@ -1,1 +1,41 @@
+@import '/src/app/styles/vars'
+@import '/src/app/styles/mixins'
+
 header
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  background-color: rgba(255, 255, 255, 0.0)
+  transition: background-color 700ms
+  z-index: $z-fixed
+.header_scrolled
+  background-color: rgba(255, 255, 255, 0.6)
+
+.nav
+  justify-content: space-around
+  align-items: center
+  width: 100%
+  height: 60px
+  backdrop-filter: blur(3px)
+  .logo
+    .logo__text
+      position: relative
+      font-family: $osiris
+      font-size: $normal-font-size
+      +special_link
+      margin-left: 20px
+  .links
+    justify-content: space-between
+    width: 500px
+  .item__text
+    font-family: $montserrat
+    font-size: $small-font-size
+    font-weight: $font-semi-bold
+    &:hover
+      color: $black-dark
+    &:active
+      color: $black-light
+  .auth
+    margin-right: 20px
+

@@ -1,0 +1,24 @@
+@import './vars'
+
+@mixin special_link
+  &::after
+    content: ''
+    width: 0
+    height: 2px
+    background-color: $black
+    position: absolute
+    left: 50%
+    bottom: -2px
+    transition: width 300ms
+  &::before
+    content: ''
+    width: 0
+    height: 2px
+    background-color: $black
+    position: absolute
+    right: 50%
+    bottom: -2px
+    transition: width 300ms
+  &:hover:after,
+  &:hover:before
+    width: 50%

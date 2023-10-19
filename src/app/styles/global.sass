@@ -1,7 +1,10 @@
+@import '/src/app/styles/vars'
+
 html
   scroll-behavior: smooth
 
 body
+  color: $black
   transition: background-color 400ms
 
 ul
@@ -10,14 +13,27 @@ ul
 a
   text-decoration: none
 
+.link
+  text-decoration: none /* Убрать подчеркивание текста */
+  color: inherit /* Использовать цвет текста по умолчанию */
+  outline: none /* Убрать выделение (фокус) ссылки */
+  cursor: pointer
+
+
 img
   display: block
-  max-width: 100%
-  height: auto
+  height: 100%
+  width: auto
 
 .container
-  max-width: 1600px
-  margin-inline: 20px 10px
+  max-width: 1440px
+  margin-inline: 20px 20px
 
 .section
   overflow: hidden
+
+.flex
+  display: flex
+
+.grid
+  display: grid

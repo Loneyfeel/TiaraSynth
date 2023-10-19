@@ -1,0 +1,163 @@
+@import '/src/app/styles/vars'
+
+.section
+  position: relative
+  cursor: default
+  &__welcome
+    background-color: $home-s-1-color
+  .welcome
+    &__content
+      margin: auto
+      width: 100%
+      .title
+        flex-direction: column
+        align-items: flex-start
+        &__text
+          position: relative
+          left: 20px
+          &_small
+            font-family: $montserrat
+            font-weight: $font-regular
+            font-size: 50px
+            text-transform: uppercase
+          &_big
+            position: relative
+            font-family: $kronaOne
+            font-size: 150px
+            text-transform: uppercase
+            top: -10px
+            left: -11px
+        &__image
+          position: relative
+          .title__img
+            position: relative
+            left: -65px
+            width: 100%
+    &__image
+      width: 50%
+      .welcome__img
+        height: 1000px
+      &-description
+          position: absolute
+          bottom: 160px
+          right: 500px
+          .vector
+            height: 45px
+            margin-bottom: 20px
+            margin-left: 150px
+          .description
+            position: relative
+            right: 75px
+            font-family: $montserrat
+            font-weight: $font-semi-bold
+            font-size: $normal-font-size
+            text-align: center
+  &__description
+    color: $home-s-2-color
+    background-color: $black
+    .tiara
+      &__image
+        position: relative
+        .tiara__img
+          height: 1000px
+          transform: scaleX(-1)
+          background-color: $home-s-2-color
+        .lines_up
+          position: absolute
+          top: 0
+          left: 0
+          height: 212px
+        .lines_down
+          position: absolute
+          bottom: 132px
+          right: 0
+          height: 298px
+      &__content
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .annotation
+          font-family: $montserrat
+          font-weight: $font-semi-bold
+          font-size: $normal-font-size
+          margin-bottom: 110px
+        .tiara
+          &__logo
+            justify-content: center
+            margin-bottom: 70px
+            .logo__img
+              height: 250px
+          &__text
+            display: flex
+            flex-direction: column
+            align-items: center
+            .tiara__title
+              text-transform: uppercase
+              font-family: $osiris
+              font-size: 100px
+              margin-bottom: 20px
+            .tiara__description
+              width: 500px
+              font-family: $montserrat
+              font-weight: $font-semi-bold
+              font-size: $normal-font-size
+              line-height: 1.4
+              text-align: center
+        .lines_white_down
+          position: absolute
+          bottom: 0
+          left: 800px
+          height: 320px
+  &__exclusive
+    color: $home-s-1-color
+    background-image: url('src/share/assets/images/homePage/home3-bg.png')
+    .exclusive
+      &__image
+        .exclusive__img
+        height: 1000px
+      &__content
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+      &__title
+        font-family: $montserrat
+        font-weight: $font-semi-bold
+        font-size: 100px
+        text-align: center
+        margin-bottom: 250px
+      &__authors
+        margin-bottom: 200px
+        .author__text
+          position: relative
+          font-family: $osiris
+          font-size: $h2-font-size
+          margin: 0 50px
+      &__text
+        font-family: $montserrat
+        font-weight: $font-semi-bold
+        font-size: $h3-font-size
+        text-align: center
+        margin-bottom: 30px
+      &__button
+        justify-content: center
+        align-items: center
+        width: 150px
+        height: 50px
+        background-color: $home-s-1-color
+        border-radius: 30px
+        cursor: pointer
+        p
+          font-family: $montserrat
+          text-transform: uppercase
+          color: $black
+          font-weight: $font-semi-bold
+          font-size: $normal-font-size
+          margin-top: 3px
+        &:hover
+          background-color: #79DFDC
+        &:active
+          background-color: #5BADAA

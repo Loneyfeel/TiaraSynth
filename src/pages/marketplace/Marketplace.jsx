@@ -1,5 +1,5 @@
 
-import './marketplace.sass  '
+import './marketplace.sass'
 
 function Marketplace(){
     return (
